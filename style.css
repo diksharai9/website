@@ -1,0 +1,271 @@
+*{
+    box-sizing: border-box;
+    
+        padding: 0px;
+        margin: 0px;
+        
+        overflow-x: hidden;
+        
+      
+}
+
+
+html{
+    scroll-behavior: smooth;
+    overflow:visible;
+}
+
+body{
+    background-color: white;
+    color:black;
+}
+
+
+
+
+
+
+  nav{
+    background-color: lightgrey;
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+    height: 60px;
+    padding:0px 20px;
+  }
+  
+  .nav-li {
+    list-style: none;
+    margin: 0px 10px;
+    color:black;
+    display: inline-block;
+    font-size: 30px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    padding: 8px 8px;
+    border: 1px solid transparent;
+    transition: all 0.4s all;
+    text-align:left;
+  }
+  .nav-li:hover {
+    border-bottom: 1px solid crimson;
+    color: crimson;
+    cursor: pointer;
+  }
+  
+  
+  .line-1 {
+    width: 35px;
+  }
+  .line-2 {
+    width: 25px;
+  }
+  .line-3 {
+    width: 40px;
+  }
+  
+ 
+  
+
+  .text {
+    float: left;
+    margin-top: 50px;
+    width: 50%;
+    padding: 10px;
+    height: 500px; /* Should be removed. Only for demonstration */
+    overflow: hidden;
+  }
+  
+  /* Clear floats after the columns */
+  .container-div:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .text {
+      width: 100%;
+    }
+  }
+  
+
+  .hello-txt{
+      font-size: 50px;
+      color: black;
+      text-align: center;
+      font-family: 'Roboto Mono', monospace;
+      margin-top: 40px;
+  }
+  .little-txt{
+      font-size: 20px;
+      color: darkgray;
+      font-family: 'Roboto Mono', monospace;
+  }
+
+  .main-text{
+      font-size: 30px;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+  }
+
+  .rounded-circle{
+    border-radius: 50%;
+    height: auto;
+  }
+ 
+  .container {
+    background-color: rgb(192, 192, 192);
+    width: 80%;
+        border-radius: 15px;
+        height: 20px;
+}
+
+.skill {
+    background-color: dodgerblue;
+    color: white;
+    padding: 1%;
+    text-align: right;
+    font-size: 20px;
+        border-radius: 15px;
+        height: 20px;
+}
+
+.html {
+    width: 90%;
+}
+.ml{
+  width: 40%;
+}
+
+.tech-icon{
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+.skills-txt{
+  font-family: 'Roboto Mono', monospace;
+  text-align: center;
+}
+.tools-txt{
+  font-family: 'Roboto Mono', monospace;
+  text-align: center;
+}
+.project-txt{
+  font-family: 'Roboto Mono', monospace;
+  text-align: center;
+}
+
+
+
+
+ /*cards*/
+ #content-cards{
+  position: relative;
+  height: 50vh;
+  
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  padding: 0 10px;
+  border-radius: 0px 0px 0px 0px;
+  margin-top: 20px;
+  
+}
+
+.row {margin: 0 -5px;}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+
+
+.cards {
+  
+  border-radius: 0px 0px 0px 0px;
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  height: 313px;
+  background-color: white;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+.bt {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color:black;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  
+}
+
+
+
+.bt:hover, a:hover {
+  opacity: 0.7;
+}
+
+
+.pic{
+  height: 30%;
+  border-radius: 0px 0px 0px 0px;
+}
+
+.card-front-text{
+  
+}
+.subhead{
+  color:darkblue;
+}
+
+
+.contact{
+  display: inline;
+  text-align: center;
+}
+
+li {
+  float: left;
+  text-align: center;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+ 
+  
+}
+
+.ma-text{
+  font-size: 20px;
+}
+.button{
+  text-decoration: none;
+  color: white;
+}
