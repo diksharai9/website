@@ -1,271 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
 *{
-    box-sizing: border-box;
-    
-        padding: 0px;
-        margin: 0px;
-        
-        overflow-x: hidden;
-        
-      
+  box-sizing: border-box;
 }
 
-
-html{
-    scroll-behavior: smooth;
-    overflow:visible;
+.vector{
+  width: 50vw;
+  height: auto;
 }
 
-body{
-    background-color: white;
-    color:black;
-}
-
-
-
-
-
-
-  nav{
-    background-color: lightgrey;
-    display: flex;
-    justify-content: space-around;
-    text-align: left;
-    height: 60px;
-    padding:0px 20px;
-  }
-  
-  .nav-li {
-    list-style: none;
-    margin: 0px 10px;
-    color:black;
-    display: inline-block;
-    font-size: 30px;
-    text-transform: capitalize;
-    letter-spacing: 2px;
-    padding: 8px 8px;
-    border: 1px solid transparent;
-    transition: all 0.4s all;
-    text-align:left;
-  }
-  .nav-li:hover {
-    border-bottom: 1px solid crimson;
-    color: crimson;
-    cursor: pointer;
-  }
-  
-  
-  .line-1 {
-    width: 35px;
-  }
-  .line-2 {
-    width: 25px;
-  }
-  .line-3 {
-    width: 40px;
-  }
-  
- 
-  
-
-  .text {
-    float: left;
-    margin-top: 50px;
-    width: 50%;
-    padding: 10px;
-    height: 500px; /* Should be removed. Only for demonstration */
-    overflow: hidden;
-  }
-  
-  /* Clear floats after the columns */
-  .container-div:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
-    .text {
-      width: 100%;
-    }
-  }
-  
-
-  .hello-txt{
-      font-size: 50px;
-      color: black;
-      text-align: center;
-      font-family: 'Roboto Mono', monospace;
-      margin-top: 40px;
-  }
-  .little-txt{
-      font-size: 20px;
-      color: darkgray;
-      font-family: 'Roboto Mono', monospace;
-  }
-
-  .main-text{
-      font-size: 30px;
-      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-
-  }
-
-  .rounded-circle{
-    border-radius: 50%;
-    height: auto;
-  }
- 
-  .container {
-    background-color: rgb(192, 192, 192);
-    width: 80%;
-        border-radius: 15px;
-        height: 20px;
-}
-
-.skill {
-    background-color: dodgerblue;
-    color: white;
-    padding: 1%;
-    text-align: right;
-    font-size: 20px;
-        border-radius: 15px;
-        height: 20px;
-}
-
-.html {
-    width: 90%;
-}
-.ml{
-  width: 40%;
-}
-
-.tech-icon{
-  display: flex;
-  align-items: center;
-  padding: 20px;
-}
-.skills-txt{
-  font-family: 'Roboto Mono', monospace;
-  text-align: center;
-}
-.tools-txt{
-  font-family: 'Roboto Mono', monospace;
-  text-align: center;
-}
-.project-txt{
-  font-family: 'Roboto Mono', monospace;
+.head-txt{
   text-align: center;
 }
 
 
 
-
- /*cards*/
- #content-cards{
-  position: relative;
-  height: 50vh;
-  
-}
-
-.column {
+.educoll{
+  border-radius: 50%;
   float: left;
-  width: 33.3%;
-  padding: 0 10px;
-  border-radius: 0px 0px 0px 0px;
-  margin-top: 20px;
+  margin-right: 10px;
+  
+  width: 25%;
+  height: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   
 }
-
-.row {margin: 0 -5px;}
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-    display: block;
-    margin-bottom: 20px;
-  }
-}
-
-
-
-.cards {
+.edutxt{
   
-  border-radius: 0px 0px 0px 0px;
-  max-width: 300px;
-  margin: auto;
+  margin-top: 2%;
+  margin-bottom: 7%;
   text-align: center;
-  height: 313px;
+}
+
+.card-header{
   background-color: white;
+  color: black;
+}
+.card-body{
+  background-color: white;
+  color: black;
 }
 
-.title {
-  color: grey;
-  font-size: 18px;
+.card{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-style: none;
 }
 
-.bt {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 8px;
-  color: white;
-  background-color:black;
-  text-align: center;
-  cursor: pointer;
+.style{
+  font-family: 'Merienda', cursive;
+}
+
+.text{
+  font-family: 'Kaushan Script', cursive;
+  
+
+}
+
+.about{
+  font-size: 25px;
+  font-family: 'Quattrocento', serif;
+}
+
+.main-text{
+  font-family: 'Quattrocento', serif;
+}
+.proj{
   width: 100%;
-  font-size: 18px;
-  
+  height: auto;
 }
 
-
-
-.bt:hover, a:hover {
-  opacity: 0.7;
-}
-
-
-.pic{
-  height: 30%;
-  border-radius: 0px 0px 0px 0px;
-}
-
-.card-front-text{
-  
-}
-.subhead{
-  color:darkblue;
-}
-
-
-.contact{
-  display: inline;
+.projtxt{
   text-align: center;
+  font-size: 50px;
 }
 
-li {
-  float: left;
-  text-align: center;
-}
 
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 16px;
-  text-decoration: none;
+.whatido{
+  width: 80%;
+  height: auto;
+}
+.proj-card{
  
+ width: 15px;
+ height: auto;
+}
+
+.navbar-toggler{
+  border-style: none;
+}
+
+
+
+@media (max-width: 480px) {
+  .vector{
+    height: 60vh;
+    width: 100vw;
+
+  }
   
 }
 
-.ma-text{
-  font-size: 20px;
+
+@media (max-width: 573px) {
+  .vector{
+    height: 60vh;
+    width: 100vw;
+
+  }
+  
 }
-.button{
-  text-decoration: none;
-  color: white;
+
+
+@keyframes fade-in {
+  from {opacity: 0; transform: scale(.7,.7)}
+  to {opacity: 1;}
+}
+.fade-in-element {
+animation: fade-in 1.4s;
+}
+
+.hidden {
+  opacity: 0;
 }
